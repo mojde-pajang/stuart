@@ -1,8 +1,10 @@
 import Button from 'react-bootstrap/Button'
 import React from 'react'
 
-const PreSignUp = () => {
-  function Icon() {
+const PreSignUp = (props) => {
+console.log('props',props)
+  
+function Icon() {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -18,6 +20,7 @@ const PreSignUp = () => {
       </svg>
     );
   }
+
   return (
     <div className='signup-content'>
       <h1>How Stuart Increased customer loyalty in 2021</h1>
@@ -28,7 +31,7 @@ const PreSignUp = () => {
         <li>{Icon()}<span className='text-black-50'>Data 2, tilte of first important note</span></li>
         <li>{Icon()}<span className='text-black-50'>Data 3, tilte of first important note</span></li>
       </ul>
-      <Button variant="primary" className='rounded-pill' size="lg">Grab The Guid</Button>
+      <Button variant="primary" className='rounded-pill' size="lg" onClick={ (event)=>{ event.preventDefault(); props.onClick(false)}}>Grab The Guid</Button>
     </div>
 
   )

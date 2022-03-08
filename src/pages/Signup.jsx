@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import  PreSignUp  from '../component/PreSignUp'
@@ -6,10 +6,16 @@ import  SignUpForm  from '../component/SignUpForm'
 import pic from "../images/signup.png"
 import './Signup.css'
 const Signup = (props) => {
-    
+
+    const [submit, setSubmit] = useState(true);
+
+    const handleChange = (val) => {
+        setSubmit(val);
+      }
+
     let content ;
-        if ( true ){
-            content = <PreSignUp></PreSignUp>
+        if ( submit ){
+            content = <PreSignUp onClick={handleChange} ></PreSignUp>
         }else{
             content = <SignUpForm></SignUpForm>
         }
