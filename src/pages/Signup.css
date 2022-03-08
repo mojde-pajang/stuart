@@ -1,0 +1,52 @@
+.signup-page{
+    overflow-x: hidden;
+    position: relative;
+}
+
+.signup-page img{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.signup-page .signup-content{
+    max-width: 700px;
+    padding-top: 130px;
+}
+
+.signup-page .signup-content h1{
+    max-width: 520px;
+    margin-bottom: 20px;
+    line-height: 1.4em;
+}
+
+.signup-page .signup-content h5{
+    margin-bottom: 30px;
+    line-height: 1.6em;
+}
+
+.signup-page form{
+    max-width: 500px;
+    padding-top: 90px;
+}
+
+.signup-page .title{
+    padding-top: 160px;
+    padding-left: 90px;
+    max-width: 440px;
+}
+
+.benefits{
+    padding: 0;
+    margin-bottom: 50px;
+
+}
+.benefits li{
+    list-style: none;
+}
+.benefits svg{
+    width: 22px;
+    height: 30px;
+    display: inline-block;
+    fill: #05239C;
+    margin-right: 10px;
+}
